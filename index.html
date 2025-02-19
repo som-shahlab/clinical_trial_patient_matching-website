@@ -176,11 +176,11 @@
             For our initial zero-shot evaluation, we feed the entire patient's medical history into the LLM and have it predict all criteria at once. All of the models we test are able to fit each patient's history into their context windows (Table 1). Despite not being tuned for trial matching or provided any in-context examples, GPT-4 beats the state-of-the-art by a margin of +6 Macro-F1 and +2 Micro-F1 points. 
             <br>
             <br>
-            <b>Table 1:</b> Zero-shot results on the 2018 n2c2 cohort selection challenge. We use the 32k context length version of all models, with the exception of GPT-3.5 (which is limited to 16k tokens).
+            <b>Table 1:</b> Zero-shot 2018 n2c2 benchmark results using the <i>ACIN</i> prompt strategy. We use versions of each model with at least 32k context length, with the exception of GPT-3.5 (limited to 16k tokens) and Llama-3-70b (limited to 8k tokens). Bootstrapped 95% confidence intervals on the test set (1000 samples) are shown in subscript.
             </p>
           </p>
         </div>
-        <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+        <img src="static/images/table1.png" alt="Accuracy"/>
       </div>
     </div>
   </div>
@@ -197,11 +197,11 @@
           
           <p>
          
-            <b>Table 2:</b> Performance and efficiency across different prompt strategies. "Tokens" includes both prompt and completion tokens (i.e. inputs and outputs). "API Calls" is the total number of times the LLM was queried. "Cost" is based on OpenAI's pricing as of January 25, 2024 
+            <b>Table 2:</b> Performance and efficiency across different prompt strategies. Cost and data efficiency of prompting strategies Considering one criterion/note at a time improves performance. "Tokens" includes both prompt and completion tokens (i.e. inputs and outputs). "API Calls" is the total number of times the LLM was queried. "Cost" is based on OpenAI’s pricing as of January 25, 2024
             </p>
           </p>
         </div>
-        <img src="static/images/table2.png" alt="MY ALT TEXT"/>
+        <img src="static/images/table2.png" alt="Cost"/>
         <br>
         <br>
       </div>
